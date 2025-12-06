@@ -8,7 +8,7 @@ package com.mycompany.proyecto_datos;
  *
  * @author aldoi
  */
-public class Proyecto_datos {
+public class IntefazGrafica {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
