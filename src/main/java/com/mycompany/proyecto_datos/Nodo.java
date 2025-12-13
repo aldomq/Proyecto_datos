@@ -8,28 +8,29 @@ package com.mycompany.proyecto_datos;
  *
  * @author aldoi
  */
-public class NodoMantenimiento {
-    private Mantenimiento dato;
-    private NodoMantenimiento siguiente;
+public class Nodo {
 
-    public NodoMantenimiento(Mantenimiento dato) {
+    private Maquina dato;
+    private Nodo siguiente;
+
+    public Nodo(Maquina dato) {
         this.dato = dato;
         this.siguiente = null;
     }
 
-    public Mantenimiento getDato() {
+    public Maquina getDato() {
         return dato;
     }
 
-    public void setDato(Mantenimiento dato) {
+    public void setDato(Maquina dato) {
         this.dato = dato;
     }
 
-    public NodoMantenimiento getSiguiente() {
+    public Nodo getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(NodoMantenimiento siguiente) {
+    public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
     }
 }

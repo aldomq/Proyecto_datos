@@ -8,21 +8,50 @@ package com.mycompany.proyecto_datos;
  *
  * @author aldoi
  */
-public class Mantenimiento {
-    int id;
-    Maquina maquina;
-    String tipo;
-    String fechaProgramada;
-    String estado;
-    String descripcion;
+import java.util.Date;
 
-    public Mantenimiento(int id, Maquina maquina, String tipo, String fechaProgramada, String estado,
-            String descripcion) {
+public class Mantenimiento {
+    private int id;
+    private Maquina maquina;
+    private String tipo;
+    private Date fechaProgramada;
+    private String estado;
+    private String descripcion;
+
+    public Mantenimiento(int id, Maquina maquina, String tipo, Date fechaProgramada, String estado, String descripcion) {
         this.id = id;
         this.maquina = maquina;
         this.tipo = tipo;
         this.fechaProgramada = fechaProgramada;
         this.estado = estado;
         this.descripcion = descripcion;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public Maquina getMaquina() {
+        return maquina;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public Date getFechaProgramada() {
+        return fechaProgramada;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }
