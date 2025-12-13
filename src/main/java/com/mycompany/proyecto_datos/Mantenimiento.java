@@ -9,5 +9,20 @@ package com.mycompany.proyecto_datos;
  * @author aldoi
  */
 public class Mantenimiento {
-    
+    int id;
+    Maquina maquina;
+    String tipo;
+    String fechaProgramada;
+    String estado;
+    String descripcion;
+
+    public Mantenimiento(int id, Maquina maquina, String tipo, String fechaProgramada, String estado,
+            String descripcion) {
+        this.id = id;
+        this.maquina = maquina;
+        this.tipo = tipo;
+        this.fechaProgramada = fechaProgramada;
+        this.estado = estado;
+        this.descripcion = descripcion;
+    }
 }
